@@ -59,3 +59,13 @@ add_test(NAME test_quick_sort COMMAND test_quick_sort)
 add_executable(test_merge_sort test_merge_sort.cpp)
 target_link_libraries(test_merge_sort gtest gtest_main)
 add_test(NAME test_merge_sort COMMAND test_merge_sort)
+
+#Add test excutable for heap sort
+add_executable(test_heap_sort test_heap_sort.cpp)
+target_link_libraries(test_heap_sort gtest gtest_main)
+add_test(NAME test_heap_sort COMMAND test_heap_sort)
+
+#Add test excutable for insertion sort
+add_executable(test_insertion_sort test_insertion_sort.cpp)
+target_link_libraries(test_insertion_sort gtest gtest_main)
+add_test(NAME test_insertion_sort COMMAND test_insertion_sort)
